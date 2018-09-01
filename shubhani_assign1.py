@@ -11,7 +11,7 @@ for n in range(x,y+1):
 
 
 print ("fibonacci series upto a range input by the user")
-x=int(input("enter the upper bound"))
+x=int(input("enter the lower bound"))
 y=int(input("enter the upper bound:"))
 a = 0
 b = 1
