@@ -1,0 +1,177 @@
+
+Assigment 1 
+
+
+Python 3
+
+ 
+n=int(input())#program to print fibonnaci pattren...
+
+x=1
+
+y=0
+
+
+
+for i in range(n):
+
+    k=x+y
+
+    y=x
+
+    x=k
+
+    print(k)
+
+    
+
+8
+1
+2
+3
+5
+8
+13
+21
+34
+
+#factorial of a number..
+
+def factorial(n):
+
+    x=1
+
+    i=0
+
+    while i<n:
+
+        i+=1
+
+        x=x*i
+
+    print(x)
+
+result=factorial(3)    
+
+#output6
+
+
+#decimal to binary without using inbuilt function.
+
+def decimalTobinary(n):
+
+    if(n>1):
+
+        decimalTobinary(n//2)
+
+    print(n%2)
+
+n=int(input())    
+
+if __name__=='__main__':
+
+    result=decimalTobinary(n)
+
+    
+
+​
+
+​
+
+7#input
+#output
+1
+1
+1
+
+#binary to decimal conversion.
+
+def binTodeci(x):
+
+    deci,i=0,0
+
+    while(x!=0):
+
+        dec=x%10
+
+        deci=deci+dec*pow(2,i)
+
+        x=x//10
+
+        i+=1
+
+    print(deci)
+
+x=int(input())
+
+​
+
+result=binTodeci(x)
+
+result
+
+​
+
+    
+
+    
+
+        
+
+111#input
+7
+
+#program to delete duplicate value in list..
+
+a=[1,2,2,3,3,4,4,5]
+
+b=[]
+
+for i in a:
+
+    if i not in b:
+
+        
+
+        b.append(i)
+
+        pass    
+
+    else:
+
+        continue
+
+print(b)        
+
+[1, 2, 3, 4, 5]
+
+
+#prime numbers in given range....
+
+n=int(input())
+
+b=[]
+
+for i in range(n+1):
+
+    if i>1:
+
+        for k in range(2,i):
+
+            if(i%k==0):
+
+                break
+
+        else:
+
+            if (i not in b):
+
+                b.append(i)
+
+print(b)                    
+
+            
+
+45
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43]
+
